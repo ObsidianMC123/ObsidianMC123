@@ -156,17 +156,7 @@
 
 <br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ObsidianMC123&theme=react-dark&bg_color=0D1117&color=A78BFA&line=A78BFA&point=FFFFFF&area=true&hide_border=true" width="100%" alt="Contribution activity graph"/>
-
-</div>
-
----
-
-<h3 align="center">🏆 Trophies</h3>
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=ObsidianMC123&theme=radical&no-frame=true&no-bg=false&margin-w=8&margin-h=8&column=6&row=1" alt="GitHub trophies"/>
+<img src="https://raw.githubusercontent.com/ObsidianMC123/ObsidianMC123/output/github-snake-dark.svg" width="100%" alt="Contribution snake"/>
 
 </div>
 
