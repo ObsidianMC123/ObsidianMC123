@@ -8,7 +8,12 @@ and do the profiling myself.
 Heading toward **DevSecOps**. The first-year plan is to get genuinely good at building things
 before trying to break them.
 
+<img src="assets/architecture.svg" width="100%" alt="SIVI architecture: Paper server, plugins, datapack and the GitHub-hosted resource pack chain">
+
 ## Things I actually debugged
+
+<img src="assets/tick-budget.svg" width="100%" alt="One server tick has a 50 ms budget; the stall used 620 ms">
+
 
 | Symptom | Root cause | Result |
 | :--- | :--- | :--- |
@@ -28,6 +33,9 @@ Minecraft 1.20.3+ clients keep a *stack* of resource packs, but calling `sendRes
 four times wipes that stack on each call and only the last pack survives. This sends all four at
 once, with fixed UUIDs so the client reuses its cache instead of re-downloading 24 MB on every
 join, and holds the player invulnerable until every pack lands.
+
+<img src="assets/pack-stack.svg" width="100%" alt="Four separate sendResourcePacks calls wipe the stack; one call with four packs keeps all of them">
+
 
 **[sivi-resourcepacks](https://github.com/ObsidianMC123/sivi-resourcepacks)** — `Paper 26.1.2`
 Pack host for the server. Tagged releases served straight off `raw.githubusercontent`,

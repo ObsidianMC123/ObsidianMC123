@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" role="img" aria-label="Calling sendResourcePacks four times wipes the stack. One call with four packs keeps all of them.">
+  <defs>
+    <pattern id="g3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#161B22" stroke-width="1"/>
+    </pattern>
+    <marker id="arw" markerWidth="10" markerHeight="10" refX="9" refY="3.2" orient="auto">
+      <path d="M0 0 L9 3.2 L0 6.4 z" fill="#A78BFA"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="300" fill="#0D1117"/>
+  <rect width="1000" height="300" fill="url(#g3)"/>
+
+  <text x="40" y="36" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6E7681" letter-spacing="1.8">THE CLIENT KEEPS A STACK OF RESOURCE PACKS. EACH CALL CLEARS IT.</text>
+
+  <g transform="translate(40,62)">
+    <text x="0" y="0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#8B949E">sendResourcePacks() x4</text>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5">
+      <rect x="0" y="18" width="330" height="34" rx="4" fill="#161B22" stroke="#21262D"/>
+      <text x="14" y="40" fill="#484F58">pack 1  &#183;  ui</text>
+      <line x1="14" y1="35" x2="130" y2="35" stroke="#484F58" stroke-width="1.2"/>
+      <text x="250" y="40" fill="#6E7681">wiped</text>
+
+      <rect x="0" y="60" width="330" height="34" rx="4" fill="#161B22" stroke="#21262D"/>
+      <text x="14" y="82" fill="#484F58">pack 2  &#183;  guns</text>
+      <line x1="14" y1="77" x2="140" y2="77" stroke="#484F58" stroke-width="1.2"/>
+      <text x="250" y="82" fill="#6E7681">wiped</text>
+
+      <rect x="0" y="102" width="330" height="34" rx="4" fill="#161B22" stroke="#21262D"/>
+      <text x="14" y="124" fill="#484F58">pack 3  &#183;  mobs</text>
+      <line x1="14" y1="119" x2="140" y2="119" stroke="#484F58" stroke-width="1.2"/>
+      <text x="250" y="124" fill="#6E7681">wiped</text>
+
+      <rect x="0" y="144" width="330" height="34" rx="4" fill="#1C1233" stroke="#4C1D95"/>
+      <text x="14" y="166" fill="#A78BFA">pack 4  &#183;  sound</text>
+      <text x="232" y="166" fill="#A78BFA">survives</text>
+    </g>
+    <text x="0" y="208" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6E7681">1 of 4 loaded, 24 MB re-downloaded on every join</text>
+  </g>
+
+  <g transform="translate(430,150)">
+    <line x1="0" y1="0" x2="105" y2="0" stroke="#A78BFA" stroke-width="2" marker-end="url(#arw)"/>
+    <text x="0" y="-14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#A78BFA">one call</text>
+    <text x="0" y="24" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#6E7681">fixed UUIDs</text>
+  </g>
+
+  <g transform="translate(600,62)">
+    <text x="0" y="0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#8B949E">sendResourcePacks(all four)</text>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" fill="#A78BFA">
+      <rect x="0" y="18" width="330" height="34" rx="4" fill="#1C1233" stroke="#4C1D95">
+        <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.2s" fill="freeze"/>
+      </rect>
+      <text x="14" y="40">pack 1  &#183;  ui</text>
+      <rect x="0" y="60" width="330" height="34" rx="4" fill="#1C1233" stroke="#4C1D95">
+        <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.4s" fill="freeze"/>
+      </rect>
+      <text x="14" y="82">pack 2  &#183;  guns</text>
+      <rect x="0" y="102" width="330" height="34" rx="4" fill="#1C1233" stroke="#4C1D95">
+        <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>
+      </rect>
+      <text x="14" y="124">pack 3  &#183;  mobs</text>
+      <rect x="0" y="144" width="330" height="34" rx="4" fill="#1C1233" stroke="#4C1D95">
+        <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.8s" fill="freeze"/>
+      </rect>
+      <text x="14" y="166">pack 4  &#183;  sound</text>
+    </g>
+    <text x="0" y="208" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#3FB950">4 of 4 loaded, served from client cache</text>
+  </g>
+</svg>
