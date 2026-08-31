@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240" width="1000" height="240" role="img" aria-label="Nguyen Thanh Tuan - first-year CS student at PTIT HCM">
+  <defs>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4C1D95"/>
+      <stop offset="55%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#161B22" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1000" height="240" fill="#0D1117"/>
+  <rect width="1000" height="240" fill="url(#grid)"/>
+  <rect x="0" y="236" width="1000" height="4" fill="url(#edge)"/>
+  <rect x="40" y="62" width="3" height="86" fill="#A78BFA"/>
+
+  <text x="64" y="86" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#8B949E" letter-spacing="2.5">OBSIDIANMC123</text>
+  <text x="63" y="126" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="35" font-weight="700" fill="#E6EDF3">Nguyễn Thanh Tuấn</text>
+  <text x="64" y="154" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#8B949E">First-year CS student at PTIT HCM &#183; Java &#183; Kotlin &#183; Paper plugin developer</text>
+  <text x="64" y="184" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#A78BFA">I learn by running things in production and being forced to fix them.</text>
+
+  <g transform="translate(648,58)">
+    <text x="0" y="0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#6E7681" letter-spacing="1.5">SERVER TICK RATE, AFTER PROFILING</text>
+    <line x1="0" y1="14" x2="300" y2="14" stroke="#21262D" stroke-width="1"/>
+    <line x1="0" y1="52" x2="300" y2="52" stroke="#21262D" stroke-width="1" stroke-dasharray="3 4"/>
+    <line x1="0" y1="98" x2="300" y2="98" stroke="#21262D" stroke-width="1"/>
+    <path d="M0 92 L38 88 L76 95 L114 86 L152 90 L190 44 L228 34 L266 30 L300 28 L300 98 L0 98 Z" fill="url(#fade)"/>
+    <path d="M0 92 L38 88 L76 95 L114 86 L152 90 L190 44 L228 34 L266 30 L300 28"
+          fill="none" stroke="#A78BFA" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+          stroke-dasharray="420" stroke-dashoffset="420">
+      <animate attributeName="stroke-dashoffset" from="420" to="0" dur="2.2s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1" keyTimes="0;1" values="420;0"/>
+    </path>
+    <circle cx="152" cy="90" r="3.4" fill="#0D1117" stroke="#6E7681" stroke-width="1.8"/>
+    <circle cx="300" cy="28" r="3.8" fill="#A78BFA">
+      <animate attributeName="opacity" values="0;0;1" dur="2.4s" fill="freeze"/>
+    </circle>
+    <text x="0" y="118" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6E7681">17.3</text>
+    <text x="272" y="118" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#A78BFA">19.5</text>
+    <text x="96" y="118" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6E7681">620 ms spike removed</text>
+  </g>
+</svg>
